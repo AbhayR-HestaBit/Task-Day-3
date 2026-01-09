@@ -9,4 +9,4 @@ for(const l of lines)if(isError(l))c++
 return c
 }
 const logs=fs.readFileSync("app.log","utf8").split("\n")
-console.log(countErrors(logs))
+console.log("Total Errors:",countErrors(logs))
