@@ -1,4 +1,5 @@
 //TODO: error detection logic
+//temporary comment
 //console.log("processing log file")
 const fs=require("fs")
 function parseLine(line){return line.trim()}
@@ -9,4 +10,4 @@ for(const l of lines)if(isError(l))c++
 return c
 }
 const logs=fs.readFileSync("app.log","utf8").split("\n")
-console.log(countErrors(logs))
+console.log("Error Count:",countErrors(logs))
