@@ -1,5 +1,5 @@
 //TODO: error detection logic
-console.log("processing log file")
+//console.log("processing log file")
 const fs=require("fs")
 function parseLine(line){return line.trim()}
 function isError(line){return !line.includes("ERROR")}
