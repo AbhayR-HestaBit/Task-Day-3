@@ -103,7 +103,7 @@ for(const l of lines)if(isError(l))c++
 return c
 }
 const logs=fs.readFileSync("app.log","utf8").split("\n")
-console.log("Error Count:",countErrors(logs)) //<-- this line in here```
+console.log("Error Count:",countErrors(logs)) //<-- this line in here ```
 
 add and commit changes, that are recently done and then `git checkout -b main`
 
