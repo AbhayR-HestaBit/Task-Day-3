@@ -103,14 +103,16 @@ for(const l of lines)if(isError(l))c++
 return c
 }
 const logs=fs.readFileSync("app.log","utf8").split("\n")
-console.log("Error Count:",countErrors(logs)) //<-- this line in here ```
+console.log("Error Count:",countErrors(logs)) //<-- this line in here
+```
 
 add and commit changes, that are recently done and then `git checkout -b main`
 
 and will modify the same line with different comments, which will eventually create conflict while merging.
 
 merge branches using `git merge feature`
-it will say ```CONFLICT (content): Merge conflict in log.js
+it will say:
+ ```CONFLICT (content): Merge conflict in log.js
 Automatic merge failed; fix conflicts and then commit the result.```
 
 now will have to review it manually and do changes, after that commit those changes and merge conflict will be resolved.
